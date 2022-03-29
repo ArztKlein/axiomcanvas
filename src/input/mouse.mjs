@@ -1,7 +1,11 @@
 export var mouseX, mouseY;
-export let mouseIsDown = false;
+let mouseIsDown = false;
 
 var mouseDownCallback, mouseUpCallback, mouseMoveCallback;
+
+export function isMouseDown(){
+    return mouseIsDown;
+}
 
 export function mouseSetup(mouseDownCallback_, mouseUpCallback_, mouseMoveCallback_){
     mouseDownCallback = mouseDownCallback_;
