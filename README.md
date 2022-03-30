@@ -48,3 +48,12 @@ function onKeyUp(key){
 
 setup();
 ```
+
+## Test if key is held
+
+Test to see if the shift key is held down.
+```js
+import { KEY_SHIFT, isKeyDown } from "./canvas/input/keyboard.mjs";
+
+console.log(isKeyDown(KEY_SHIFT));
+```
