@@ -1,10 +1,10 @@
 import { Renderer, rendererObject } from "./renderer.mjs";
 
 export class AxiomCanvas{
-    constructor(id, drawFunction, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback){
+    constructor(id, drawFunction, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback, keyUpCallback){
         this.id = id;
 
-        this.renderer = new Renderer(this, drawFunction, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback);
+        this.renderer = new Renderer(this, drawFunction, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback, keyUpCallback);
         this.renderer = rendererObject;
     }
 

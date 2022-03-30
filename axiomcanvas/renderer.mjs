@@ -8,7 +8,7 @@ var ctx;
 export var rendererObject;
 
 export class Renderer{
-    constructor(axiomcanvas, callback, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback){
+    constructor(axiomcanvas, callback, mouseDownCallback, mouseUpCallback, mouseMoveCallback, keyDownCallback, keyUpCallback){
 
         this.axiomcanvas = axiomcanvas;
 
@@ -18,7 +18,7 @@ export class Renderer{
 
         this.canvas = this.ctx.canvas;
 
-        keyboardSetup(keyDownCallback);
+        keyboardSetup(keyDownCallback, keyUpCallback);
         mouseSetup(mouseDownCallback, mouseUpCallback, mouseMoveCallback);
 
         window.onresize = this.onWindowResize;

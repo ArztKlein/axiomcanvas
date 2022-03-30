@@ -6,7 +6,7 @@ import { AxiomCanvas } from "./axiomcanvas/axiomcanvas.mjs";
 var axiomCanvas;
 
 function setup(){
-    axiomCanvas = new AxiomCanvas("main-canvas", render, onMouseDown, onMouseUp, onMouseMove, onKeyDown);
+    axiomCanvas = new AxiomCanvas("main-canvas", render, onMouseDown, onMouseUp, onMouseMove, onKeyDown, onKeyUp);
 }
 
 function render(){
@@ -26,6 +26,10 @@ function onMouseMove(mouseX, mouseY){
 }
 
 function onKeyDown(key){
+    // Insert your code
+}
+
+function onKeyUp(key){
     // Insert your code
 }
 

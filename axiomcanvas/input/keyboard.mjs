@@ -42,9 +42,11 @@ export const OPERATOR_KEYS = [
 export const ARROW_KEYS = [KEY_ARROW_RIGHT, KEY_ARROW_UP, KEY_ARROW_LEFT, KEY_ARROW_DOWN];
 
 var keyDownCallback;
+var keyUpCallback;
 
-export function keyboardSetup(keyDownCallback_){
+export function keyboardSetup(keyDownCallback_, keyUpCallback_){
     keyDownCallback = keyDownCallback_;
+    keyUpCallback = keyUpCallback_;
     document.addEventListener('keydown', keyDownHandler);
     document.addEventListener('keyup', keyUpHandler);
 }
@@ -70,7 +72,7 @@ function keyUpHandler(e){
 
     heldKeys[e.key] = false;
 
-    // keyUpHandler(key);
+    keyUpCallback(key);
 }
 
 export function isArrowKey(key){
