@@ -5,6 +5,14 @@ Place the canvas directory into your project.
 
 # Usage
 
+When creating the AxiomCanvas, you'll need to add 5 mouse/keyboard callbacks.
+These include:
+- Mouse Down
+- Mouse Up
+- Mouse Move
+- Key Down
+- Key Up
+
 ```js
 import { AxiomCanvas } from "./canvas/axiomcanvas.mjs";
 
