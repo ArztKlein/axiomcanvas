@@ -1,7 +1,7 @@
 # Usage
 
 ```js
-import { AxiomCanvas } from "./src/canvas/axiomcanvas.mjs";
+import { AxiomCanvas } from "./axiomcanvas/axiomcanvas.mjs";
 
 var axiomCanvas;
 
@@ -30,5 +30,4 @@ function onKeyDown(key){
 }
 
 setup();
-
 ```
