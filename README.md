@@ -57,3 +57,11 @@ import { KEY_SHIFT, isKeyDown } from "./canvas/input/keyboard.mjs";
 
 console.log(isKeyDown(KEY_SHIFT));
 ```
+
+## Test if mouse is held down
+
+```js
+import { isMouseDown } from "./canvas/input/mouse.mjs";
+
+console.log(isMouseDown());
+```
