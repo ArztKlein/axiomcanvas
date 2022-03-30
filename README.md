@@ -1,7 +1,12 @@
+# Installation
+Clone the repository `git clone https://github.com/ArztKlein/axiomcanvas.git`
+
+Place the canvas directory into your project.
+
 # Usage
 
 ```js
-import { AxiomCanvas } from "./axiomcanvas/axiomcanvas.mjs";
+import { AxiomCanvas } from "./canvas/axiomcanvas.mjs";
 
 var axiomCanvas;
 
