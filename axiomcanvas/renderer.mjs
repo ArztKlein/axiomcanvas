@@ -25,7 +25,7 @@ export class Renderer{
         this.onWindowResize();
 
         rendererObject = this;
-        run(callback, this.ctx);
+        run(callback);
     }
 
     onWindowResize(){
