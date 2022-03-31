@@ -28,6 +28,10 @@ export class Renderer{
         run(callback);
     }
 
+    setFill(colour){
+        this.ctx.fillStyle = colour;
+    }
+
     onWindowResize(){
         width  = window.innerWidth;
         height = window.innerHeight;
