@@ -18,6 +18,8 @@ export class Renderer{
 
         this.canvas = this.ctx.canvas;
 
+        this.useFill = false;
+
         keyboardSetup(keyDownCallback, keyUpCallback);
         mouseSetup(mouseDownCallback, mouseUpCallback, mouseMoveCallback);
 
@@ -28,8 +30,13 @@ export class Renderer{
         run(callback);
     }
 
+    disableFill(){
+        this.useFill = false;
+    }
+
     setFill(colour){
         this.ctx.fillStyle = colour;
+        this.useFill = true;
     }
 
     onWindowResize(){
