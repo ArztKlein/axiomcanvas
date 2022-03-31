@@ -30,6 +30,17 @@ export class Renderer{
         run(callback);
     }
 
+    square(x, y, w, h){
+        if(this.useFill){
+            this.ctx.fillRect(x, y, w, h);
+        }else{
+            this.ctx.beginPath();
+            this.ctx.rect(x, y, w, h);
+            this.ctx.stroke();
+
+        }
+    }
+
     disableFill(){
         this.useFill = false;
     }
