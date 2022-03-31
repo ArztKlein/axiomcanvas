@@ -22,6 +22,8 @@ export function setCursorStyle(style){
 }
 
 export function mouseDownHandler(){
+    mouseIsDown = true;
+
     mouseDownCallback(mouseX, mouseY);
 }
 
