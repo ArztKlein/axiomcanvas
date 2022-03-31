@@ -65,3 +65,12 @@ import { isMouseDown } from "./canvas/input/mouse.mjs";
 
 console.log(isMouseDown());
 ```
+
+## Draw square
+```js
+renderer.square(x, y, w, h);
+```
+## Disable fill
+```js
+renderer.disableFill(); // Use outlines when drawing instead of filling.
+```
