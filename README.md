@@ -72,5 +72,5 @@ renderer.square(x, y, w, h);
 ```
 ## Disable fill
 ```js
-renderer.disableFill(); // Use outlines when drawing instead of filling.
+renderer.disableFill(); // Don't fill when drawing shapes
 ```
