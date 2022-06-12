@@ -4,6 +4,7 @@ export const KEY_BACKSPACE = "Backspace";
 export const KEY_CAPS_LOCK = "CapsLock";
 export const KEY_CONTROL = "Control";
 export const KEY_DELETE = "Delete";
+export const KEY_ENTER = "Enter";
 export const KEY_ESCAPE = "Escape";
 export const KEY_FN = "Fn";
 export const KEY_META = "Meta";
@@ -25,6 +26,7 @@ heldKeys[KEY_ALT_GRAPH] = false;
 heldKeys[KEY_BACKSPACE] = false;
 heldKeys[KEY_CAPS_LOCK] = false;
 heldKeys[KEY_CONTROL] = false;
+heldKeys[KEY_ENTER] = false;
 heldKeys[KEY_ESCAPE] = false;
 heldKeys[KEY_FN] = false;
 heldKeys[KEY_META] = false;
@@ -35,7 +37,7 @@ heldKeys[KEY_SHIFT] = false;
 heldKeys[KEY_SYMBOL] = false;
 
 export const OPERATOR_KEYS = [
-    KEY_ALT, KEY_ALT_GRAPH, KEY_BACKSPACE, KEY_CAPS_LOCK, KEY_CONTROL, KEY_DELETE, KEY_ESCAPE, KEY_FN, KEY_META, KEY_NUM_LOCK, KEY_OS, KEY_SCROLL_LOCK, KEY_SHIFT, KEY_SYMBOL,
+    KEY_ALT, KEY_ALT_GRAPH, KEY_BACKSPACE, KEY_CAPS_LOCK, KEY_CONTROL, KEY_DELETE, KEY_ENTER, KEY_ESCAPE, KEY_FN, KEY_META, KEY_NUM_LOCK, KEY_OS, KEY_SCROLL_LOCK, KEY_SHIFT, KEY_SYMBOL,
     KEY_ARROW_RIGHT, KEY_ARROW_UP, KEY_ARROW_LEFT, KEY_ARROW_DOWN
 ];
 
