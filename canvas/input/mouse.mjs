@@ -21,10 +21,10 @@ export function setCursorStyle(style){
     document.body.style.cursor = style;
 }
 
-export function mouseDownHandler(){
+export function mouseDownHandler(event){
     mouseIsDown = true;
 
-    mouseDownCallback(mouseX, mouseY);
+    mouseDownCallback(mouseX, mouseY, event);
 }
 
 export function mouseUpHandler(){
